@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="25dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alarm Clock Application"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Alarm Time"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnSelectTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECT TIME" />
+
+    <Button
+        android:id="@+id/btnSetAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SET ALARM"
+        android:layout_marginTop="15dp" />
+
+</LinearLayout>

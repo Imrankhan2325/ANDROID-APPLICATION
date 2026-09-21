@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multithreading Application"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#222222"/>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Ready to Start"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <!-- Thread 1 -->
+
+    <TextView
+        android:id="@+id/task1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Thread 1 - Download Task"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <ProgressBar
+        android:id="@+id/progress1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:max="100"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Waiting..."
+        android:textSize="14sp"/>
+
+    <!-- Thread 2 -->
+
+    <TextView
+        android:id="@+id/task2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Thread 2 - File Processing"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <ProgressBar
+        android:id="@+id/progress2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:max="100"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Waiting..."
+        android:textSize="14sp"/>
+
+    <!-- Overall -->
+
+    <TextView
+        android:id="@+id/overall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Overall Progress: 0%"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="15dp"
+        android:background="#222222"
+        android:padding="10dp"
+        android:text="Execution Log"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"/>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="START THREADS"/>
+
+</LinearLayout>
